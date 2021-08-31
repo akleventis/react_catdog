@@ -1,4 +1,3 @@
-Re-creating cat-project with React
+Re-creating my [cat-project](https://github.com/akleventis/Cat-Project) with React
 -----
 
-[Original Project on Github](https://github.com/akleventis/Cat-Project)

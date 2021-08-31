@@ -1,5 +1,6 @@
 .container {
-    padding: 400px;
+    padding-top: 400px;
+    padding-bottom: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -14,7 +15,7 @@ img {
 }
 
 @keyframes move-down {
-    to {transform: translateY(250px);}
+    to {transform: translateY(275px);}
 }
 @keyframes move-left {
     to {transform: translateX(-400px);}
@@ -23,7 +24,7 @@ img {
     to {transform: translateX(400px);}
 }
 @keyframes move-up {
-    to {transform: translateY(-250px)}
+    to {transform: translateY(-275px)}
 }
 
 .move-down {

@@ -1,10 +1,12 @@
 .headers {
     width: 100%;
     position: fixed;
-    background-color: #3693d1;
+    background-color: #162240;
+    color: white;
 }
 
 header {
+    font-size: 2em;
     text-align: center;
     margin-top: 0;
     margin-bottom: 5rem;
@@ -29,11 +31,11 @@ footer {
     margin: .2em;
     padding: 0 15px 0 15px;
   }
-  footer a {
-    color: white;
+a {
     text-decoration: none;
+    color: white
   }
-  footer a:hover {
+a:hover {
     color: #79c9f7;
   }
   footer span {

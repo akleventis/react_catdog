@@ -1,9 +1,59 @@
-.buttons {
+.button-container {
     display: flex;
     justify-content: space-around;
-    margin: auto;
-    width: 50%;
-    max-width: 250px;
-    border: 3px solid green;
+    margin: 0;
+    flex-direction: column;
+    width: 35%;
     padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+}
+button:hover {
+    border: 1px solid #79267c;
+    box-shadow: none;
+}
+button:focus{
+    outline: none;
+    box-shadow: none;
+}
+button:active{
+    outline: none;
+    box-shadow: none;
+}
+.reset {
+    background-color: #79267c;
+    color: white;
+    font-size: .9em;
+}
+.reset:hover {
+    border: none;
+    background-color: #4d1251;
+}
+.up {
+    background: url("./button_images/up.png");
+    background-position: center;
+    background-size: cover;
+}
+.down {
+    background: url("./button_images/down.png");
+    background-position: center;
+    background-size: cover;
+}
+.left {
+    background: url("./button_images/left.png");
+    background-position: center;
+    background-size: cover;
+}
+.right {
+    background: url("./button_images/right.png");
+    background-position: center;
+    background-size: cover;
 }
