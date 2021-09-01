@@ -8,10 +8,10 @@ const Footer = () => {
           © Alex Leventis
         </a>
         <span>
-          <a href="https://bit.ly/3wcMRaV" className="links" target="_blank" rel="noreferrer">
+          <a href="http://alexcod.es/github" className="links" target="_blank" rel="noreferrer">
             Github
           </a>
-          <a href="https://bit.ly/2Tnd6fW" className="links" target="_blank" rel="noreferrer">
+          <a href="http://alexcod.es/linkedin" className="links" target="_blank" rel="noreferrer">
             Linkdin
           </a>
         </span>

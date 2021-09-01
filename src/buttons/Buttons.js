@@ -1,29 +1,32 @@
 import React, { useEffect } from "react";
 import "./Buttons.css";
+
 const Buttons = (props) => {
+  const keys = ['ArrowUp', 'ArrowRight', 'ArrowLeft', 'ArrowDown', ' ']
 
   let keyPressHandler = ((event) => {
-    event.preventDefault();
+    keys.forEach(e => event.key===e && event.preventDefault())
     switch (event.key) {
-        case "ArrowUp":
+        case keys[0]:
         props.move("move-up");
         break;
-        case "ArrowRight":
+        case keys[1]:
         props.move("move-right");
         break;
-        case "ArrowLeft":
+        case keys[2]:
         props.move("move-left");
         break;
-        case "ArrowDown":
+        case keys[3]:
         props.move("move-down");
         break;
-        case " ":
+        case keys[4]:
         props.reset();
         break
         default:
         break;
     }
   });
+
   useEffect(() => {
     document.addEventListener('keydown', keyPressHandler);
     return () => {
@@ -46,7 +49,7 @@ const Buttons = (props) => {
       <div>
         <button className="down" onClick={() => props.move("move-down")}>-</button>
       </div>
-      <div className="info">
+      <div>
           Use keyboard arrow keys (spacebar to reset), or click the buttons above for images
       </div>
     </div>

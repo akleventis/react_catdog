@@ -4,6 +4,7 @@
     margin: 0;
     flex-direction: column;
     width: 35%;
+    max-width: 300px;
     padding: 10px;
     text-align: center;
     color: white;
@@ -17,7 +18,7 @@ button {
     border-radius: 10px;
 }
 button:hover {
-    border: 1px solid #79267c;
+    border: 1px solid #048f7c;
     box-shadow: none;
 }
 button:focus{
@@ -29,14 +30,16 @@ button:active{
     box-shadow: none;
 }
 .reset {
-    background-color: #79267c;
+    width: 55px;
+    background-color: #296e66;
     color: white;
     font-size: .9em;
+    border: 2px solid #048f7c;
 }
 .reset:hover {
     border: none;
-    background-color: #4d1251;
 }
+
 .up {
     background: url("./button_images/up.png");
     background-position: center;

@@ -1,46 +1,61 @@
 .headers {
-    width: 100%;
-    position: fixed;
-    background-color: #162240;
-    color: white;
+  width: 100%;
+  position: fixed;
+  background-color: #2a5d57;
+  color: white;
 }
 
 header {
-    font-size: 2em;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 5rem;
-    border-bottom: 2px solid #048f7c;
-    padding: 15px 0 15px;
-    z-index: 1;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5rem;
+  border-bottom: 2px solid #048f7c;
+  padding: 15px 0 15px;
+  z-index: 1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.dog-button {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  font-size: 0.5em;
+  right: 25px;
+  background-color: #34716a;
+  border: 2px solid #048f7c;
+}
+.dog-button:hover {
+  border: none;
+}
 
 footer {
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    border: 2px solid #000000;
-    border-top: 2px solid #048f7c; 
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 5px 0 5px 0;
-  }
-  footer p {
-    margin: .2em;
-    padding: 0 15px 0 15px;
-  }
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  border: 2px solid #000000;
+  border-top: 2px solid #048f7c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px 0 5px 0;
+}
+footer p {
+  margin: 0.2em;
+  padding: 0 15px 0 15px;
+}
 a {
-    text-decoration: none;
-    color: white
-  }
+  text-decoration: none;
+  color: white;
+}
 a:hover {
-    color: #79c9f7;
-  }
-  footer span {
-    float: right;
-  }
-  .links {
-    margin: 2em 0 0 15px;
-  } 
+  color: #79c9f7;
+}
+footer span {
+  float: right;
+}
+.links {
+  margin: 2em 0 0 15px;
+}

@@ -8,7 +8,7 @@ class CreateImage extends Component {
   }
 
   componentDidMount() {
-    fetch("https://api.thecatapi.com/v1/images/search ")
+    fetch(this.props.url)
       .then((res) => res.json())
       .then((data) => {
         this.setState({
@@ -20,7 +20,7 @@ class CreateImage extends Component {
   render() {
     const data = this.state;
     let cls = this.props.className
-    return <img alt="cat" className={cls} src={data.item}></img>;
+    return <img alt="animal" className={cls} src={data.item}></img>;
   }
 }
 
