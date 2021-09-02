@@ -31,7 +31,7 @@ const Buttons = (props) => {
     document.addEventListener('keydown', keyPressHandler);
     return () => {
         document.removeEventListener('keydown', keyPressHandler)
-    }
+    };
   });
       
   return (
@@ -49,7 +49,7 @@ const Buttons = (props) => {
       <div>
         <button className="down" onClick={() => props.move("move-down")}>-</button>
       </div>
-      <div>
+      <div className="info">
           Use keyboard arrow keys (spacebar to reset), or click the buttons above for images
       </div>
     </div>

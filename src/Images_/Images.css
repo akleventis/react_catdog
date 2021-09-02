@@ -1,6 +1,6 @@
 .container {
-    padding-top: 400px;
-    padding-bottom: 400px;
+    padding-top: 300px;
+    padding-bottom: 280px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,22 +9,22 @@
 
 img {
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 230px;
+    width: 230px;
     border-radius: 10px;
 }
 
 @keyframes move-down {
-    to {transform: translateY(275px);}
+    to {transform: translateY(235px);}
 }
 @keyframes move-left {
-    to {transform: translateX(-400px);}
+    to {transform: translateX(-300px);}
 }
 @keyframes move-right {
-    to {transform: translateX(400px);}
+    to {transform: translateX(300px);}
 }
 @keyframes move-up {
-    to {transform: translateY(-275px)}
+    to {transform: translateY(-235px)}
 }
 
 .move-down {

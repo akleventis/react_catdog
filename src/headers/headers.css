@@ -6,12 +6,12 @@
 }
 
 header {
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   margin-top: 0;
   margin-bottom: 5rem;
   border-bottom: 2px solid #048f7c;
-  padding: 15px 0 15px;
+  padding: 10px 0 10px;
   z-index: 1;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -21,8 +21,8 @@ header {
   cursor: pointer;
   color: white;
   position: absolute;
-  width: 150px;
-  height: 35px;
+  width: 120px;
+  height: 30px;
   font-size: 0.5em;
   right: 25px;
   background-color: #34716a;
@@ -40,7 +40,8 @@ footer {
   border-top: 2px solid #048f7c;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  padding: 5px 0 5px 0;
+  padding: 3px 0 3px 0;
+  font-size: .78em;
 }
 footer p {
   margin: 0.2em;

@@ -1,41 +1,48 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 
 import CreateImage from "./CreateImage";
 import Buttons from '../buttons/Buttons'
 import "./Images.css";
 
-
-const AddImage = (props) => {
-  
-    const [images, setImage] = useState(() => {
-      return []})
-  
-
-    let url = props.switchFlag === true ? 'https://api.thedogapi.com/v1/images/search' : 'https://api.thecatapi.com/v1/images/search'
-
-    const moveHandler = (class_name) => {
-        setImage([...images, <CreateImage url={url} className={class_name} key={Math.random()} />])
-      }
-          
-    const resetHandler = () => {
-      setImage([]);
+class AddImage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      images: []
     };
+  };
 
-    const reset = () => {
-      return () => props.onReset(false);
+  componentDidUpdate(prevProps) {
+    if (this.props.isCat !== prevProps.isCat) {
+      this.resetHandler();
+      this.updateBodyColor();
     }
-    
-    if (props.resetFlag===true) {
-      reset();
-      resetHandler();
-    }
+  }
+  updateBodyColor = () => {
+    this.props.isCat ? document.body.style.backgroundColor = '#47737c' : document.body.style.backgroundColor = '#557f86';
+  }
 
+  moveHandler = (class_name) => {
+
+    let url = this.props.isCat === false ? 'https://api.thedogapi.com/v1/images/search' : 'https://api.thecatapi.com/v1/images/search';
+
+    this.setState(
+      {images: [...this.state.images, <CreateImage url={url} className={class_name} key={Math.random()} />]}
+      );
+  };
+
+  resetHandler = () => {
+    this.setState({images: []})
+  };
+
+  render () {
     return (
-        <div className="container">
-          {images}
-          <Buttons reset={resetHandler} move={moveHandler}/>
-        </div>
-    );
+      <div className="container">
+      {this.state.images}
+      <Buttons reset={this.resetHandler} move={this.moveHandler} />
+    </div>
+    )
+  }
 }
 
-export default AddImage;
+export default AddImage

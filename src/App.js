@@ -1,37 +1,30 @@
-import React, { useState }from "react";
+import React, { Component }from "react";
 import AddImage from "./Images_/AddImage";
-import HeaderCat from "./headers/HeaderCat";
-import HeaderDog from './headers/HeaderDog'
+import Header from './headers/Header';
 import Footer from "./headers/Footer";
 import './App.css'
 
-const App = () => {
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isCat: true
+    };
+  };
 
-  const [switchFlag, setSwitchFlag] = useState(() => {
-    return false
-  });
+  isCatHandler = (flag) => {
+    this.setState({isCat: flag});
+  };
 
-  const [resetOnSwitch, setResetSwitch] = useState(() => {
-    return false
-  });
-
-  const switchHandler = flag => setSwitchFlag(flag);
-  
-  const resetHandler = resetFlag => setResetSwitch(resetFlag);
-
-  const renderHeader = () => {
+  render () {
     return (
-      switchFlag===false ?  <HeaderCat onReset={resetHandler} onSwitch={switchHandler}/> : <HeaderDog onReset={resetHandler} onSwitch={switchHandler}/>
-    );
-  }
-
-  return (
-    <div>
-      {renderHeader()}
-      <AddImage resetFlag={resetOnSwitch} switchFlag={switchFlag}/>
+      <div>
+      <Header onSwitch={this.isCatHandler} />
+      <AddImage isCat={this.state.isCat}/>
       <Footer />
     </div>
-  );
-};
+    )
+  }
+}
 
 export default App;
