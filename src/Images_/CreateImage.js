@@ -18,9 +18,7 @@ class CreateImage extends Component {
   };
 
   render() {
-    const data = this.state;
-    let cls = this.props.className
-    return <img alt="animal" className={cls} src={data.item}></img>
+    return <img alt=" " className={this.props.className} src={this.state.item}></img>
   };
 };
 
