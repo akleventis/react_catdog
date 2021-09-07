@@ -1,18 +1,21 @@
-import React, { Component }from "react";
+import React from "react";
 import AddImage from "./Images_/AddImage";
 import Header from './headers/Header';
 import Footer from "./headers/Footer";
 import './App.css'
 
-class App extends Component {
-  constructor() {
-    super();
+interface IState {
+  isCat: boolean;
+}
+class App extends React.Component<{}, IState> {
+  constructor(props: {}) {
+    super(props);
     this.state = {
       isCat: true
     };
   };
 
-  isCatHandler = (flag) => {
+  isCatHandler = (flag: boolean): void => {
     this.setState({isCat: flag});
   };
 

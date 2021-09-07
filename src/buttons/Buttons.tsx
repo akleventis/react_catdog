@@ -1,10 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Buttons.css";
 
-const Buttons = (props) => {
-  const keys = ['ArrowUp', 'ArrowRight', 'ArrowLeft', 'ArrowDown', ' ']
+interface IProps {
+  move: (arg0: string) => void;
+  reset: () => void;
+}
 
-  let keyPressHandler = ((event) => {
+const Buttons = (props: IProps) => {
+  const keys: string[] = ['ArrowUp', 'ArrowRight', 'ArrowLeft', 'ArrowDown', ' ']
+
+  let keyPressHandler = ((event: { key: string; preventDefault: () => void; }) => {
     keys.forEach(e => event.key===e && event.preventDefault())
     switch (event.key) {
         case keys[0]:
@@ -27,7 +32,7 @@ const Buttons = (props) => {
     }
   });
 
-  useEffect(() => {
+  React.useEffect(() => {
     document.addEventListener('keydown', keyPressHandler);
     return () => {
         document.removeEventListener('keydown', keyPressHandler)

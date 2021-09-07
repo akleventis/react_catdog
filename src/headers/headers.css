@@ -17,6 +17,14 @@ header {
   border-bottom-right-radius: 5px;
 }
 
+.logo {
+  height: 53px;
+  width: 105px;
+  position: absolute;
+  left: 5%;
+  top: 0;
+}
+
 .dog-button {
   cursor: pointer;
   color: white;
@@ -24,7 +32,7 @@ header {
   width: 120px;
   height: 30px;
   font-size: 0.5em;
-  right: 25px;
+  right: 5%;
   background-color: #34716a;
   border: 2px solid #048f7c;
 }

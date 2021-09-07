@@ -1,10 +1,17 @@
-import React, { Component}  from "react";
+import React from "react";
 
-
-class CreateImage extends Component {
-  constructor(props) {
+interface IProps {
+  url: string;
+  className: string;
+  key: number;
+}
+interface IState {
+  item: string;
+}
+class CreateImage extends React.Component<IProps, IState>{
+  constructor(props: IProps) {
     super(props);
-    this.state = { data: [] };
+    this.state = { item: '' };
   };
 
   componentDidMount() {
