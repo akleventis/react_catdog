@@ -1,4 +1,4 @@
-## Re-creating my [cat-project](https://github.com/akleventis/Cat-Project) with React & Typescript
+## Re-creating my [cat-project](https://github.com/akleventis/Cat-Project) with React & TypeScript
 ----
 
 
