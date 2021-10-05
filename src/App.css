@@ -3,5 +3,67 @@ body {
     font-size: 12pt;
     padding: 0;
     margin: 0;
-    background-color: #47737c;
+    background-color: rgb(12, 36, 46);
 }
+@media (max-width: 800px) {
+    .info {
+        font-size: 10pt;
+    }
+    img {
+        position: absolute;
+        height: 175px;
+        width: 175px;
+        border-radius: 10px;
+    }
+
+    .container{
+        padding-top: 250px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .info {
+        font-size: 8.5pt;
+    }
+    img {
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        border-radius: 10px;
+    }
+
+    .container{
+        padding-top: 250px;
+    }
+    .container{
+        padding-top: 175px;
+    }
+  }
+  @media (max-width: 380px) {
+    .container {
+        padding-top: 150px;
+    }
+    .headers {
+        font-size: 13pt;
+    }
+    .dog-button {
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        width: 55px;
+        height: 25px;
+        font-size: 0.5em;
+        right: 5%;
+        background-color: #28456e;
+        border: 1px solid #048f7c;
+        padding: 2px;
+      }
+      .footer {
+          font-size: 8pt;
+      }
+      .logo {
+          height: 35px;
+          width: 80px;
+          top: 5px;
+      }
+  }

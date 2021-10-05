@@ -26,7 +26,7 @@ class AddImage extends React.Component<IProps, IState> {
   }
 
   updateBodyColor = (): void => {
-    this.props.isCat ? document.body.style.backgroundColor = '#47737c' : document.body.style.backgroundColor = '#557f86';
+    this.props.isCat ? document.body.style.backgroundColor = 'rgb(12, 36, 46)' : document.body.style.backgroundColor = 'rgb(35, 93, 119)';
   }
 
   moveHandler = (class_name: string): void => {

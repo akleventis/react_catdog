@@ -1,55 +1,130 @@
 .container {
-    padding-top: 280px;
-    padding-bottom: 280px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 300px;
+  padding-top: 280px;
+  padding-bottom: 280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
 }
 
 img {
-    position: absolute;
-    height: 230px;
-    width: 230px;
-    border-radius: 10px;
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  border-radius: 10px;
 }
 
 @keyframes move-down {
-    to {transform: translateY(235px);}
+  to {
+    transform: translateY(235px);
+  }
 }
 @keyframes move-left {
-    to {transform: translateX(-300px);}
+  to {
+    transform: translateX(-300px);
+  }
 }
 @keyframes move-right {
-    to {transform: translateX(300px);}
+  to {
+    transform: translateX(300px);
+  }
 }
 @keyframes move-up {
-    to {transform: translateY(-235px)}
+  to {
+    transform: translateY(-235px);
+  }
 }
 
 .move-down {
-    animation-name: move-down;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  animation-name: move-down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .move-right {
-    animation-name: move-right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  animation-name: move-right;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .move-left {
-    animation-name: move-left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  animation-name: move-left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .move-up {
-    animation-name: move-up;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  animation-name: move-up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .move {
-    animation-name: move-down;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+  animation-name: move-down;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
+@media (max-width: 800px) {
+  @keyframes move-down {
+    to {
+      transform: translateY(220px);
+    }
+  }
+  @keyframes move-left {
+    to {
+      transform: translateX(-250px);
+    }
+  }
+  @keyframes move-right {
+    to {
+      transform: translateX(250px);
+    }
+  }
+  @keyframes move-up {
+    to {
+      transform: translateY(-220px);
+    }
+  }
+}
+@media (max-width: 500px) {
+    @keyframes move-down {
+        to {
+          transform: translateY(170px);
+        }
+      }
+      @keyframes move-left {
+        to {
+          transform: translateX(-150px);
+        }
+      }
+      @keyframes move-right {
+        to {
+          transform: translateX(150px);
+        }
+      }
+      @keyframes move-up {
+        to {
+          transform: translateY(-170px);
+        }
+      }
+  }
+
+  @media (max-width: 380px) {
+    @keyframes move-down {
+        to {
+          transform: translateY(150px);
+        }
+      }
+      @keyframes move-left {
+        to {
+          transform: translateX(-130px);
+        }
+      }
+      @keyframes move-right {
+        to {
+          transform: translateX(130px);
+        }
+      }
+      @keyframes move-up {
+        to {
+          transform: translateY(-150px);
+        }
+      }
+  }

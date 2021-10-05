@@ -1,7 +1,7 @@
 .headers {
   width: 100%;
   position: fixed;
-  background-color: #2a5d57;
+  background-color: #0f3147;
   color: white;
 }
 
@@ -33,7 +33,7 @@ header {
   height: 30px;
   font-size: 0.5em;
   right: 5%;
-  background-color: #34716a;
+  background-color: #28456e;
   border: 2px solid #048f7c;
 }
 .dog-button:hover {

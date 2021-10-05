@@ -17,10 +17,7 @@ button {
     border: none;
     border-radius: 10px;
 }
-button:hover {
-    border: 1px solid #048f7c;
-    box-shadow: none;
-}
+
 button:focus{
     outline: none;
     box-shadow: none;
@@ -31,12 +28,13 @@ button:active{
 }
 .reset {
     width: 50px;
-    background-color: #296e66;
+    background-color: rgb(12, 36, 46);
     color: white;
-    border: 2px solid #048f7c;
+    border: 2px solid #1bd25b;
+    border-radius: 50%;
 }
 .reset:hover {
-    border: none;
+    background-color: rgb(25, 75, 96);
 }
 .info {
     padding-top: 15px;
@@ -62,3 +60,28 @@ button:active{
     background-position: center;
     background-size: cover;
 }
+@media (max-width: 500px) {
+    button {
+        height: 35px;
+        width: 35px;
+        margin: 2px;
+        border: none;
+        border-radius: 10px;
+    }
+  }
+  @media (max-width: 380px) {
+    button {
+        height: 20px;
+        width: 20px;
+        margin: 2px;
+        border: none;
+        border-radius: 10px;
+    }
+    .info{
+        padding-top: 3px;
+    }
+    .reset {
+        font-size: 8.5pt;
+        border: 1px solid #1bd25b;
+    }
+  }
