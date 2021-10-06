@@ -50,6 +50,7 @@ footer {
   border-top-right-radius: 5px;
   padding: 3px 0;
   font-size: .8em;
+  position: fixed;
 }
 footer p {
   margin: 0.2em;
